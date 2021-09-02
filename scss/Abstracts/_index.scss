@@ -1,4 +1,4 @@
 //Import all abstract files
-@use 'fonts';
-@use 'mixins';
-@use 'variables';
+@forward 'fonts';
+@forward 'mixins';
+@forward 'variables';

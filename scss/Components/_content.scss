@@ -1,5 +1,5 @@
 @use '../Abstracts/' as a;
 @use '../Base/' as b;
-.container__main {
-    background-color: a.$color-primary;
+.main__section-right {
+    background-color: a.$color-secondary;
 }

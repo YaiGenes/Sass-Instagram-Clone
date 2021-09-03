@@ -1,7 +1,7 @@
 @use '../Abstracts/' as a;
 @use '../Base/' as b;
 .container__main {
-    @include a.display-flex($justify-content: space-evenly);
+    @include a.display-flex($justify-content: center);
     min-width: 760px;
     min-height: 590px;
 }
@@ -25,6 +25,12 @@
     font-family: a.$font-h1;
     font-size: 2.5rem;
     text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .main__section-left {
+        display: none;
+    }
 }
 
 .main__section-left {

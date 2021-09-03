@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
   min-width: 760px;
   min-height: 590px;
 }
@@ -28,6 +28,11 @@
   text-align: center;
 }
 
+@media screen and (max-width: 768px) {
+  .main__section-left {
+    display: none;
+  }
+}
 .main__section-left {
   max-width: 50%;
 }

@@ -1,0 +1,10 @@
+@use '../Abstracts' as a;
+@use '../Base' as b;
+@use '../Layout' as l;
+body {
+    background-color: a.$color-primary;
+}
+
+.container {
+    @include a.display-flex($justify-content: center, $flex-direction: column);
+}

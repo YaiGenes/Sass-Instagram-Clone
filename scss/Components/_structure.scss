@@ -121,3 +121,8 @@ body {
 .post__card-2-icon {
     @include a.display-flex($flex-direction: row, $justify-content: flex-start, $gap: 0.8rem);
 }
+
+.home-container {
+    max-width: 760px;
+    @include a.display-flex($justify-content: center, $flex-direction: row);
+}

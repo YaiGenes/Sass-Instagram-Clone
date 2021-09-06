@@ -15,9 +15,12 @@
 
 .form-control {
   font-family: "Segoe UI", "Roboto", "Helvetica", "Arial", "sans-serif";
+  font-size: 0.8rem;
   margin: 5px;
   width: 270px;
   height: 40px;
+  background-color: #fafafa;
+  border: solid 1px #a5a1a1;
 }
 
 .form__title {
@@ -74,8 +77,8 @@ select {
 }
 
 .facebook-img {
-  width: 30px;
-  height: 30px;
+  width: 22px;
+  height: 22px;
   margin: 5px;
 }
 
@@ -147,6 +150,24 @@ select {
   margin-left: 1rem;
 }
 
+.card__post-date {
+  color: #a5a1a1;
+  font-weight: lighter;
+  font-size: 0.8rem;
+}
+
+.profiles-stories {
+  font-family: "Segoe UI", "Roboto", "Helvetica", "Arial", "sans-serif";
+  font-size: 0.8rem;
+  font-weight: lighter;
+  color: #a5a1a1;
+  text-align: center;
+}
+
+.post__card-1-info-user-img {
+  text-align: center;
+}
+
 .icons-size {
   width: 22px;
   height: 22px;
@@ -176,6 +197,16 @@ select {
   margin-top: 0.2rem;
 }
 
+.instagram-size {
+  width: 6rem;
+  padding-left: 1rem;
+}
+
+.index-instagram-size {
+  width: 12rem;
+  padding: 1rem 3rem;
+}
+
 body {
   background-color: #fafafa;
   display: flex;
@@ -183,6 +214,8 @@ body {
   align-items: center;
   justify-content: space-evenly;
   gap: none;
+  width: 100%;
+  margin: 0;
 }
 
 .container {
@@ -191,6 +224,7 @@ body {
   align-items: center;
   justify-content: center;
   gap: none;
+  width: 100%;
 }
 
 .container__main {
@@ -305,15 +339,23 @@ body {
   color: #a5a1a1;
 }
 
+.navbar__logo-instagram {
+  padding-left: 1rem;
+  width: 100%;
+}
+
 .navbar {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   gap: none;
-  min-width: 780px;
+  min-width: 100%;
+  min-height: 3rem;
   background-color: #ffffff;
   border: solid 1px #a5a1a142;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .navbar__icons {
@@ -322,10 +364,11 @@ body {
   align-items: center;
   justify-content: space-between;
   gap: 0.8rem;
+  padding-right: 1rem;
 }
 
 .story-banner {
-  width: 100%;
+  width: 760px;
   background-color: #ffffff;
   border: solid 1px #a5a1a142;
   margin-top: 10px;
@@ -334,6 +377,14 @@ body {
   align-items: center;
   justify-content: space-between;
   gap: 0.8rem;
+}
+
+.search-content {
+  text-align: center;
+}
+
+.navbar__search {
+  width: 100%;
 }
 
 .post__card-icon {

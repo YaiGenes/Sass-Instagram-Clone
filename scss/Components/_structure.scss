@@ -3,10 +3,13 @@
 body {
     background-color: a.$color-primary;
     @include a.display-flex();
+    width: 100%;
+    margin: 0;
 }
 
 .container {
     @include a.display-flex($justify-content: center, $flex-direction: column);
+    width: 100%;
 }
 
 .container__main {
@@ -104,23 +107,40 @@ body {
 }
 
 //Navbar Home
+.navbar__logo-instagram {
+    padding-left: 1rem;
+    width: 100%;
+}
+
 .navbar {
     @include a.display-flex($flex-direction: row, $justify-content: space-between);
-    min-width: 780px;
+    min-width: 100%;
+    min-height: 3rem;
     background-color: a.$color-secondary;
     border: solid 1px a.$color-border;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 .navbar__icons {
     @include a.display-flex($flex-direction: row, $justify-content: space-between, $gap: 0.8rem);
+    padding-right: 1rem;
 }
 
 .story-banner {
-    width: 100%;
+    width: 760px;
     background-color: a.$color-secondary;
     border: solid 1px a.$color-border;
     margin-top: 10px;
     @include a.display-flex($justify-content: space-between, $flex-direction: row, $gap: 0.8rem);
+}
+
+.search-content {
+    text-align: center;
+}
+
+.navbar__search {
+    width: 100%;
 }
 
 //Post Home

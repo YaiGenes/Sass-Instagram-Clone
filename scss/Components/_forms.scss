@@ -3,9 +3,12 @@
 //Index page
 .form-control {
     font-family: a.$font-h1;
+    font-size: 0.8rem;
     margin: 5px;
     width: 270px;
     height: 40px;
+    background-color: a.$color-primary;
+    border: solid 1px a.$color-tertiary;
 }
 
 .form__title {

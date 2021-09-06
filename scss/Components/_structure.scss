@@ -22,7 +22,7 @@ body {
 
 .section__login {
     background-color: a.$color-secondary;
-    border: solid 1px a.$color-primary;
+    border: solid 1px a.$color-border;
     border-radius: 5px;
 }
 
@@ -71,7 +71,7 @@ body {
     border-radius: 5px;
     margin-top: 10px;
     text-align: center;
-    border: solid 1px a.$color-primary;
+    border: solid 1px a.$color-border;
     width: 100%;
     font-family: a.$font-h1;
     font-size: 0.8rem;
@@ -107,22 +107,36 @@ body {
 .navbar {
     @include a.display-flex($flex-direction: row, $justify-content: space-between);
     min-width: 780px;
+    background-color: a.$color-secondary;
+    border: solid 1px a.$color-border;
 }
 
 .navbar__icons {
     @include a.display-flex($flex-direction: row, $justify-content: space-between, $gap: 0.8rem);
 }
 
-//Post Home
-.post__card-1-icon {
-    @include a.display-flex($flex-direction: row, $justify-content: flex-start, $gap: 0.8rem);
+.story-banner {
+    width: 100%;
+    background-color: a.$color-secondary;
+    border: solid 1px a.$color-border;
+    margin-top: 10px;
+    @include a.display-flex($justify-content: space-between, $flex-direction: row, $gap: 0.8rem);
 }
 
-.post__card-2-icon {
+//Post Home
+.post__card-icon {
     @include a.display-flex($flex-direction: row, $justify-content: flex-start, $gap: 0.8rem);
+    margin-left: 1rem;
 }
 
 .home-container {
     max-width: 760px;
     @include a.display-flex($justify-content: center, $flex-direction: row);
+}
+
+.comment__section {
+    background-color: a.$color-secondary;
+    border-top: none;
+    border: solid 1px a.$color-border;
+    padding: 0 auto;
 }

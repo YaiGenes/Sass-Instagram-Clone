@@ -11,3 +11,10 @@
     border-radius: 50%;
     content: inherit;
 }
+
+.like-red {
+    background-color: none;
+    &:hover {
+        background-color: #f00;
+    }
+}

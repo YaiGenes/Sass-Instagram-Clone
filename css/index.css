@@ -166,6 +166,16 @@ select {
   background-color: #f00;
 }
 
+.comment__section-icon {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: none;
+  margin-right: 1rem;
+  margin-top: 0.2rem;
+}
+
 body {
   background-color: #fafafa;
   display: flex;

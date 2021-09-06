@@ -18,3 +18,9 @@
         background-color: #f00;
     }
 }
+
+.comment__section-icon {
+    @include a.display-flex($flex-direction: row, $justify-content: space-between);
+    margin-right: 1rem;
+    margin-top: 0.2rem;
+}
